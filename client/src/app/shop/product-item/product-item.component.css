@@ -1,8 +1,21 @@
-.btn-group{
-  width: 100%;
-}
+
 
 .btn
 {
-  width: 50%;
+  width: 30%;
+  height: 40px;;
+
 }
+
+.image:hover {
+  opacity: 1;
+}
+.btn:hover {
+  transform: none;
+  opacity: 1;
+}
+
+
+
+
+
