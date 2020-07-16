@@ -50,7 +50,7 @@ export class ShopComponent implements OnInit {
 
   getBrands() {
     this.shopService.getBrands().subscribe(response => {
-      this.brands =[{id: 0 , name: 'All'}, ...response];
+      this.brands = [{id: 0 , name: 'All'}, ...response];
 
    }, error => {
      console.log(error);
@@ -87,7 +87,7 @@ export class ShopComponent implements OnInit {
 
  }
  onPageChanged(event: any){
-  if(this.shopParams.pageNumber !== event){
+  if (this.shopParams.pageNumber !== event){
     this.shopParams.pageNumber = event;
     this.getProducts();
   }
